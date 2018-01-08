@@ -5,7 +5,7 @@ vue-cliではいろんなものが入るので、軽量版としてつかう。
 ## パッケージ
 - babel-core
 - babel-loader
-- babel-preset-es2015
+- babel-preset-env
 - css-loader
 - html-webpack-plugin
 - style-loader

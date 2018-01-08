@@ -14,11 +14,13 @@ module.exports = {
         rules: [
             {
                 test: /\.js$|\.vue$/,
-                exclude: [/node_modules/],
-                use: [{
-                    loader: 'babel-loader',
-                    options: { presets: ['es2015'] }
-                }]
+                exclude: /(node_modules|bower_components)/,
+                use: {
+                    loader: "babel-loader",
+                    options: {
+                        presets: ["env"]
+                    }
+                }
             },
             {
                 test: /\.vue$/,
